@@ -28,17 +28,15 @@
 </head>
 
 <body>
-  <div class="container-fluid">
+  <div class="container">
     <div class="row mt-4">
-      <div class="col-md-1"></div>
-      <div class="col-md-10">
+      <div class="col-md-12">
         <div class="card" >
           <div class="card-header text-center"><h4 id="title" class="text-primary">Datos para conectar a Svr MySql</h4></div>
           <div class="card-body">
             <form method="post" name="formularioConexion" id="formularioConexion">
               <div class="row m-1">
-                <div class="col-md-1"></div>
-                <div class="col-md-2">
+                <div class="col-md-3">
                   <input type="hidden" class="form-control" name="cmd" id="cmd" value="conn">
                   <input type="text" class="form-control text-primary" id="db_server" name="db_server" value = "localhost" placeholder="Db Server" title="Db Server">
                 </div>
@@ -51,19 +49,18 @@
                 <div class="col-md-2">
                   <input type="text" class="form-control text-primary" id="db_name" name="db_name" value = "" placeholder="Db Name" title="Db Name">
                 </div>
-                <div class="col-md-1">
+                <div class="col-md-2">
                   <input type="number" class="form-control text-primary" id="db_serverport" name="db_serverport" value = "3306" placeholder="Server Port" title="Server Port">
                 </div>
                 <div class="col-md-1">
                   <input type="button" class="btn btn-primary" id="conectar" name="conectar" value = "Conectar" title="Conectar" onclick="enviaForm('formularioConexion')" >
                 </div>
-                <div class="col-md-1"></div>
             </div>
             </form>
           </div>
         </div>
       </div>
-      <div class="col-md-1"></div>
+
     </div>
     <div class="row mt-4">
       <div class="col-md-1"></div>
